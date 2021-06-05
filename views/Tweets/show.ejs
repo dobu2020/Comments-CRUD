@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show tweet</title>
+</head>
+<body>
+    <h2>Requested tweet  is of id: <%= tweet.id%> </h2>
+<p>  <%=tweet.tweet %> ---<b><%= tweet.username%></b></p>
+
+   
+   <a href="/tweets"> Back to all tweets </a>
+   <p></p>
+
+    <a href="/tweets/<%=tweet.id %>/edit"> Edit</a>
+    
+</body>
+</html>
