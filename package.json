@@ -1,0 +1,26 @@
+{
+  "name": "Comments-CRUD",
+  "version": "1.0.0",
+  "description": "Performing all the CRUD on comments section",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dobu2020/Comments-CRUD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dobu2020/Comments-CRUD/issues"
+  },
+  "homepage": "https://github.com/dobu2020/Comments-CRUD#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "uuid": "^8.3.2"
+  }
+}
