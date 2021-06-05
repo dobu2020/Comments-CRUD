@@ -15,6 +15,12 @@
    <p></p>
 
     <a href="/tweets/<%=tweet.id %>/edit"> Edit</a>
+
+    
+   
+    <form action="/tweets/<%=tweet.id%>?_method=DELETE " method="POST">
+<button>Delete tweet</button>
+    </form>
     
 </body>
 </html>

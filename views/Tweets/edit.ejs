@@ -9,7 +9,8 @@
 <body>
     <h1>Edit </h1>
     <form action="/tweets/<%=tweet.id%>?_method=PATCH " method="POST">
-   <textarea id="" name="tweet" cols="20" rows="5">
+    <label for="edit">Edit Your Tweet:</label>
+   <textarea id="edit" name="tweet" cols="20" rows="5">
      
         <%=tweet.tweet  %> 
     </textarea>
