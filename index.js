@@ -21,7 +21,7 @@ app.set('view engine','ejs');
 
 // Pretend like DATABASE data 
 
-const tweets=[
+let tweets=[
     {  
          id:uuidv4(),
         username:"Divya",
@@ -78,7 +78,8 @@ app.get('/tweets/:id',(req,res)=>{
   const tweet=tweets.find(t=>t.id ===id)
   res.render('Tweets/show',{tweet})
 })
-//Form interface to Update
+
+//get Form interface to Update
 
 app.get('/tweets/:id/edit',(req,res)=>{
   const{id}=  req.params;
@@ -95,6 +96,15 @@ app.patch('/tweets/:id',(req,res)=>{
   res.redirect('/tweets')
 })
 
+
+
+//DELETE
+
+app.delete('/tweets/:id',(req,res)=>{
+   const{id}=  req.params;
+tweets=tweets.filter(t=>t.id !==id);
+res.redirect('/tweets')
+})
 
 
 app.listen(8000,()=>{
